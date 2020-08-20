@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index Page</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet">
+  <link href="fontsAwesome/css/all.css" rel="stylesheet">
+  <script>
+      function openSlideMenu(){
+          document.getElementById('menu').style.width = '500px';
+          document.getElementById('contentNav').style.marginLeft = '250px';
+      }
+      function closeSlideMenu(){
+          document.getElementById('menu').style.width = '0';
+          document.getElementById('contentNav').style.marginLeft = '0';
+      }
+  </script> 
+</head>
+<body>
+    <div class="contentNav">
+                <span class="slide">
+                    <a href="#" onclick="openSlideMenu()">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </span>
+        <div id="menu" class="nav">
+            <img href="#" class="menuLogo" alt="MenuLogo"></img>
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+            </a>  
+            <div class="navItem navItem1"><i class="fas fa-home"></i> Home</div>
+            <div class="navItem navItem2"><i class="fas fa-tools"></i> Skills</div>
+            <div class="navItem navItem3"><i class="fab fa-app-store"></i> Projects</div>
+            <div class="navItem navItem4"><i class="fas fa-users"></i> Social Media</div>
+            <div class="navItem navItem5"><i class="fas fa-gamepad"></i> Extra</div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="headerContent">
+            <h1>Welcome to my homepage</h1>
+        </div>
+    </div>
+    <div class="bodyContent">
+        <div class="grid-container">
+            <div class="grid-item grid-item1">Favourite colour<br><a>Orange</a></div>
+            <div class="grid-item grid-item2">Location<br><a>Helsinki</a></div>
+            <div class="grid-item grid-item3">Age<br><a>22 yr</a></div>
+            <div class="grid-item grid-item4">Status<br><a>Student</a></div>
+            <div class="grid-item grid-item8">Looking for<br><a>Work</a></div>
+          </div> 
+    </div>
+    <script>
+        function angry(){
+            document.getElementById('face').innerHTML = ":(";
+        }
+        function happy(){
+            document.getElementById('face').innerHTML = ":)";
+        }
+    </script>
+    <div class="fun">
+        <div class="box" onmouseover="angry()" onmouseout="happy()">
+            <a id="face">:)</a>
+        </div>
+        <div class="box2">DRUNK!</div>
+    </div>
+    <footer>Feeliks Kilpi</footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

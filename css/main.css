@@ -1,0 +1,182 @@
+html {
+    background-color: slategray;
+}
+body {
+    overflow-x: hidden;
+    font-family: 'DM Mono', monospace;
+}
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .8;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.7s;
+}
+.nav a {
+    display: block;
+    margin: 5px;
+    padding: 20px 30px;
+    font-size: 60px;
+    color: #ccc;
+}
+.nav > img {
+    width: 50px;
+    height: 50px;
+}
+.navItem {
+    display: block;
+    margin: 5px;
+    padding: 20px 30px;
+    font-size: 32px;
+    color: #ccc;
+}
+.navItem:hover {
+    color: #fff;
+    transition: 0.4s;
+}
+.nav a:hover {
+    color: #fff;
+    transition: 0.4s;
+}
+.contentNav a {
+    display: block;
+    color: #fff;
+    font-size: 50px;
+    opacity: 0.7;
+}
+.headerContent {
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    opacity: 0.7;
+    transition: 1s ease-in-out;
+}
+.headerContent:hover {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    color: #fff;
+    font-size: ;
+    
+}
+.bodyContent {
+    margin: auto;
+    height: 500px;
+    margin-top: 100px;
+    border-top: 3px solid black;
+    background-color: cadetblue;
+}
+.grid-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding: 10px;
+}
+
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.grid-item8 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+  .grid-item a {
+      color: orange;
+      font-size: 16px;  
+  }
+.box {
+    width: 150px;
+    height: 150px;
+    transition: 0.7s ease-in-out;
+    text-align: center;
+    background-color: coral;
+    font-size: 32px;
+}
+.box2 {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+}
+#face {
+    line-height: 4.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+.box:hover {
+    width: 250px;
+    height: 250px;
+    transition: 0.7s ease-in-out;
+    background-color: crimson;
+}
+
+.grid-item1:hover{
+    animation: moveBox 1s;
+}
+.grid-item2:hover{
+    animation: moveBox 1s;
+}
+.grid-item8:hover{
+    animation: moveBox2 1s;
+}
+.grid-item3:hover{
+    animation: moveBox3 1s;
+}
+.grid-item4:hover{
+    animation: moveBox3 1s;
+}
+
+@keyframes moveBox {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveBox2 {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveBox3 {
+    from {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
